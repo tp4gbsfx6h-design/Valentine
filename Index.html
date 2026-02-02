@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Valentine 💘</title>
+<style>
+body {
+  background: #ffdde1;
+  font-family: Arial;
+  text-align: center;
+  padding-top: 100px;
+}
+h1 { font-size: 40px; }
+#yes {
+  padding: 15px 40px;
+  font-size: 24px;
+  background: #ff4d6d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+#no {
+  padding: 15px 40px;
+  font-size: 24px;
+  background: #555;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  position: absolute;
+}
+</style>
+</head>
+
+<body>
+
+<h1>DESHNAAA can you be my Valentine? 💗</h1>
+<button id="yes" onclick="yes()">YES 😍</button>
+<button id="no">NO 😭</button>
+
+<script>
+const no = document.getElementById("no");
+no.addEventListener("mouseover", () => {
+  no.style.left = Math.random()*80 + "%";
+  no.style.top = Math.random()*80 + "%";
+});
+function yes() {
+  document.body.innerHTML = "<h1>Yayyy 💕 You are 10ml 😘</h1>";
+}
+</script>
+
+</body>
+</html>
